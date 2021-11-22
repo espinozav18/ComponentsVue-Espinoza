@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componente-Espinoza </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script defer src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="col-lg-11 mx-auto p-3 py-md-5" id="component">
+        <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
+            <a-titulo :titulo="'Componentes'" :src='"https://vuejs.org/images/logo.svg"'
+                :style='{width: "50px",height: "50px",border: "0px"}'></a-titulo>
+
+        </header>
+
+        <main>
+            <div class="row g-5">
+                <div class="row col-md-12">
+                    <div class="col-md-6">
+                        <h3>Lista de Frutas</h3>
+                       <table-list :lists="fruits" 
+                       :dimg="dimg" 
+                       :heads="['#','Fruta','Precio','Imagen','Descripción']"
+                       :styles='{table:"table table-bordered", 
+                       head:"table-warning",colortext:"text-green",row:{color1:"table-danger",color2:"table-success"}}'></table-list>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h3>Lista de Cereales</h3>
+                        <table-list :lists="cereals" 
+                       :dimg="dimg" 
+                       :heads="['#','Cereales','Precio','Imagen','Descripción']"
+                       :styles='{table:"table table-bordered table-hover", 
+                       head:"table-dark",colortext:"text-blue-dark",row:{color1:"table-primary",color2:"table-light"}}'></table-list>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Lista de Libros</h3>
+                        <table-list :lists="literarys" 
+                       :dimg="dimg" 
+                       :heads="['#','Obra','Precio','Imagen','Descripción']"
+                       :styles='{table:"table table-bordered table-hover", 
+                       head:"table-danger",colortext:"text-orange",row:{color1:"table-warning",color2:"table-Light"}}'></table-list>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+        <footer class="pt-2 my-5 text-muted border-top">
+            Created by Exon Espinoza · © 2021
+        </footer>
+    </div>
+</body>
+
+</html>

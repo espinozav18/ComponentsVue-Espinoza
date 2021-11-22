@@ -1,0 +1,23 @@
+body{
+    /*#f5f5f5
+    background-image: url('https://images.pexels.com/photos/964547/pexels-photo-964547.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');*/
+    background-color:#f5f5f5;
+    color: #1ba33f;;
+}
+.center{
+    text-align: center;
+}
+.price{
+    text-align: end;
+}
+
+.text-blue-dark td{
+    color:#052c65
+}
+.text-green td{
+    color:rgb(8, 92, 19)
+}
+
+.text-orange td{
+    color:rgb(194, 84, 11)
+}
